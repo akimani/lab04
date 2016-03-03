@@ -1,10 +1,45 @@
 <html>
     <head>
     <title> Web Store </title>
+    <script type = "text/javascript" src = "formChecker.js"> </script>
+    <link href = "style.css" rel="stylesheet" type="text/css" />
     </head>
 <body>
+    <h1>Electronic Shop </h1>
+    <form onsubmit ="return Checkout()" action="customerBackend.php" method = "post">
+    <br> </br>
+    <table border="1" >
 
+        <td class="hd">Item</td><td class="hd">Cost </td><td class="hd">Quantity</td>
 
+        <tr>
+           <td class="hd">Desktop</td> <td>$800.00</td>
+           <td><input type = "text" name = "dsktop" id = "dsktop"></td>
+        </tr>
+
+        <tr>
+            <td class="hd">Laptop</td><td>$500.00</td>
+            <td><input type = "text" name = "lptop" id = "lptop"></td>
+        </tr>
+
+        <tr>
+            <td class="hd">Cell Phone</td><td>$300.00</td>
+            <td><input type = "text" name = "cphone" id = "cphone"></td>
+        </tr>
+
+    </table>
+    <br></br>
+    Username:<input type = "text" name = "user" id = "user"><br>
+			Password:<input type = "text" name = "password" id = "password"><br><br>
+
+    Shipping:<br>
+    <input type="radio" name="shipping" id="shipping" value="week" checked> Free 7 Day<br>
+    <input type="radio" name="shipping" id="shipping" value="overnight"> $50 Overnight<br>
+	<input type="radio" name="shipping" id="shipping" value="3-day"> $5 3-day<br><br>
+
+    <input type ="reset" value = "Reset">
+	<input type = "submit" value = "Checkout">
+	</form>
 </body>
 </html>
 
