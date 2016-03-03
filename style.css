@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+
+td.hd{
+    background-color: green;
+}
+
+td{
+    background-color: orange;
+    color: black;
+}
