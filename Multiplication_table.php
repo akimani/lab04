@@ -9,5 +9,16 @@ for($i=0; $i<101; $i++)
         echo "<td>"." "."</td>";
 }
 
+echo "<tr>";
+for($i = 1; $i<101; $i++)
+{
+    echo "<td>" .$i. "</td>";
+	for($j = 1; $j<101; $j++)
+	{
+		$k = $i * $j;
+        echo "<td>" .$k. "</td>";
+	}
+	echo "</tr>";
+}
 
 ?>
