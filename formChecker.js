@@ -26,4 +26,6 @@ function Checkout()
         window.alert("Invalid quantity(s)");
         return false;
     }
+
+    return true;
 }
