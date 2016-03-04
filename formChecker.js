@@ -5,10 +5,16 @@ function Checkout()
 
 	var email = /\b\w+@\w+\.com\b/;
 
-    if(!email.test(user)){
+    if(!email.test(user))
+    {
 
 		window.alert("Invalid username. Must be of the form user@domain.com");
 		return false;
 	}
 
+    if(passwd =="")
+    {
+        window.alert("Password cannot be blank");
+        return false;
+    }
 }
