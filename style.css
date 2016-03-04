@@ -1,12 +1,21 @@
-h1{
-    text-align: center;
+h1
+{
+    Color: blue;
+    //text-align: center;
 }
-
-td.hd{
+td.hd
+{
     background-color: green;
 }
 
-td{
+td
+{
     background-color: orange;
     color: black;
+}
+
+
+p.col
+{
+    text-align: center;
 }
